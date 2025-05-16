@@ -1,0 +1,70 @@
+Microsoft Windows [version 10.0.19045.5854]
+(c) Microsoft Corporation. Tous droits réservés.
+
+C:\Users\user>mkdir learn_git
+Un sous-répertoire ou un fichier learn_git existe déjà.
+
+C:\Users\user>cd learn_git
+
+C:\Users\user\learn_git>echo. > third.txt
+
+C:\Users\user\learn_git>git init
+Reinitialized existing Git repository in C:/Users/user/learn_git/.git/
+
+C:\Users\user\learn_git>git add third.txt
+
+C:\Users\user\learn_git>git log
+commit d835f2a62bfc4757f76661a6b1eae5cfd34dc0aa (HEAD -> master)
+Author: Mohamed <chikhi.mohamed.pro@gmail.com>
+Date:   Fri May 9 17:48:13 2025 +0100
+
+    adding fourth.txt
+
+commit eab611b94b88fdfb49c056dba33674c4f0acfce7
+Author: Mohamed <chikhi.mohamed.pro@gmail.com>
+Date:   Fri May 9 17:36:21 2025 +0100
+
+    adding third.txt
+
+C:\Users\user\learn_git>echo. > fourth.txt
+
+C:\Users\user\learn_git>git add fourth.txt
+
+C:\Users\user\learn_git>git commit -m "adding fourth.txt"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Third.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\user\learn_git>Remove the third.txt file
+'Remove' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\Users\user\learn_git>git add .
+
+C:\Users\user\learn_git>git log
+commit d835f2a62bfc4757f76661a6b1eae5cfd34dc0aa (HEAD -> master)
+Author: Mohamed <chikhi.mohamed.pro@gmail.com>
+Date:   Fri May 9 17:48:13 2025 +0100
+
+    adding fourth.txt
+
+commit eab611b94b88fdfb49c056dba33674c4f0acfce7
+Author: Mohamed <chikhi.mohamed.pro@gmail.com>
+Date:   Fri May 9 17:36:21 2025 +0100
+
+    adding third.txt
+
+C:\Users\user\learn_git>git config --global core.pager
+
+C:\Users\user\learn_git>git config --global --list
+user.name=Mohamed
+user.email=chikhi.mohamed.pro@gmail.com
+
+C:\Users\user\learn_git>git config --global
+error: no action specified
+
+C:\Users\user\learn_git>
